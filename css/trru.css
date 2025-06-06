@@ -1,0 +1,17 @@
+.cover__header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-logo-wrapper {
+  display: grid;
+  place-items: center;
+  margin-block: 1rem;
+}
+
+.custom-logo-wrapper img {
+  width: max(8vw, 150px);
+  height: auto;
+}
