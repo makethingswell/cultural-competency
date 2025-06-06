@@ -8,6 +8,7 @@
     <title>Compétence culturelle : omprendre le personnel de la sécurité publique canadienne </title>
 
     <link type="text/css" rel="stylesheet" href="lib/icomoon.css">
+    <link type="text/css" rel="stylesheet" href="../css/trru.css">
     <script type="text/javascript" src="lib/player-0.0.11.min.js"></script>
     <script type="text/javascript" src="lib/lzwcompress.js"></script>
 
@@ -15,7 +16,7 @@
     <script type="text/javascript">
       window.resizeTo(screen.width, screen.height);
     </script>
-    
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -79,7 +80,7 @@
           if (manifest[name] == null) throw new Error(`Missing manifest for remote entry "${name}".`)
           return loadModule(manifest[name])
         }
-        
+
         async function __loadJsonp(id, path) {
           try {
             return await new Promise((resolve, reject) => {
@@ -124,7 +125,26 @@
         window.__fetchCourse = __fetchCourse
       })()
     </script>
-  </head>
+    <style>
+      .cover__header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .custom-logo-wrapper {
+        display: grid;
+        place-items: center;
+        margin-block: 1rem;
+      }
+
+      .custom-logo-wrapper img {
+        width: max(8vw, 150px);
+        height: auto;
+      }
+    </style>
+</head>
   <body>
     <div id="app"></div>
     <script type="text/javascript">
@@ -158,8 +178,9 @@
   }(window));
 </script>
 
-    
+
     <script>__loadEntry()</script>
-    
+
+    <script src="../js/trru.js"></script>
   </body>
 </html>
