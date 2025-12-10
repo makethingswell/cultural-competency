@@ -1,3 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+	--color-theme-contrast-complementary-rgb: 255, 255, 255;
+	--color-theme-contrast-complementary: #fff;
+	--color-theme-contrast-rgb: 0, 0, 0;
+	--color-theme-contrast: #285f9f;
+	--color-theme-rgb: 40, 95, 159;
+	--color-theme-tint: #eaeff5;
+	--color-theme-transparent: #285f9f1a;
+	--color-theme: #fff;
+	--color-cover-cta-text: #fff;
+	--font-family-body: Poppins;
+	--font-family-head: Poppins;
+	--font-family-ui: Montserrat;
+}
+
+html,
+body,
+#app,
+#innerApp {
+	height: 100vh;
+	height: 100dvh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.imaginative .cover {
+	padding: 0 !important;
+}
+
+.imaginative .cover__header {
+	margin-bottom: 0;
+}
+
+.imaginative .cover__header-star,
+.imaginative .cover__header-content-authors {
+	display: none !important;
+}
+
+.imaginative .cover__details {
+	max-width: 100%;
+	padding-inline: 0;
+}
+
+.imaginative .cover__details img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imaginative .cover__header-content-info-logo {
+	width: max(8vw, 150px);
+	height: auto;
+	object-fit: contain;
+	margin-bottom: max(2rem, 1.5vh);
+	margin-bottom: max(2rem, 1.5dvh);
+}
+
+.imaginative .cover--layout-centered .cover__header-content {
+  padding: 0 1rem 2rem !important;
+}
+
 .cover__header-content {
   display: flex;
   flex-direction: column;
@@ -8,7 +72,8 @@
 .custom-logo-wrapper {
   display: grid;
   place-items: center;
-  margin-block: 1rem;
+	margin-bottom: max(2rem, 1.5vh);
+	margin-bottom: max(2rem, 1.5dvh);
 }
 
 .custom-logo-wrapper img {
